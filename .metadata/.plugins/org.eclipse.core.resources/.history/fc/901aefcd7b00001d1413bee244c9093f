@@ -1,0 +1,17 @@
+import { HttpClient } from '@angular/common/http';
+import { Injectable } from '@angular/core';
+import { AppConstants } from './app-constants';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class LoginServiceService {
+
+  constructor(private http: HttpClient) { }
+  
+  
+  login(usuario){
+    
+    return this.http.post(AppConstants.baseLogin, JSON.stringify(usuario));
+  }
+}
