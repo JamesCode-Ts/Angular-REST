@@ -11,7 +11,7 @@
     <div *ngIf="email.invalid" class="alert alert-danger">
        Login deve ser informado
     </div>
-</div>
+
 
   <div class="form-group"> 
     <label for="senha">Senha:</label>

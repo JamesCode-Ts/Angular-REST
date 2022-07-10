@@ -1083,3 +1083,21 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.lsp4e 1 0 2022-07-10 15:43:53.986
 !MESSAGE [Info]	Language Service is enabled for project c:/Users/jamesplay/Workspaces/Curso-Angular-REST/tsconfig.json
+
+!ENTRY org.eclipse.lsp4e 1 0 2022-07-10 17:00:48.380
+!MESSAGE [Info]	Angular project loading started
+
+!ENTRY org.eclipse.lsp4e 1 0 2022-07-10 17:00:48.381
+!MESSAGE [Info]	ngcc: Running ngcc for c:/Users/jamesplay/Workspaces/Curso-Angular-REST/tsconfig.json
+
+!ENTRY org.eclipse.lsp4e 1 0 2022-07-10 17:00:48.382
+!MESSAGE [Info]	Language Service is not yet enabled for project c:/Users/jamesplay/Workspaces/Curso-Angular-REST/tsconfig.json
+
+!ENTRY org.eclipse.lsp4e 1 0 2022-07-10 17:00:48.383
+!MESSAGE [Info]	Angular project loading finished
+
+!ENTRY org.eclipse.lsp4e 1 0 2022-07-10 17:00:54.137
+!MESSAGE [Info]	Language Service is enabled for project c:/Users/jamesplay/Workspaces/Curso-Angular-REST/tsconfig.json
+
+!ENTRY org.eclipse.lsp4e 1 0 2022-07-10 17:00:54.137
+!MESSAGE [Info]	{configFilePath=c:/Users/jamesplay/Workspaces/Curso-Angular-REST/tsconfig.json, message=Some language features are not available. To access all features, enable `strictTemplates` in `angularCompilerOptions`.}
