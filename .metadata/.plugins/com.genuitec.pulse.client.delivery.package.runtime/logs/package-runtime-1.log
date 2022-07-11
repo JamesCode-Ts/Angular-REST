@@ -1,21 +1,4 @@
-jul. 10, 2022 2:03:41 PM com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
-INFORMAÇÕES: Package starting up at Sun Jul 10 14:03:41 BRT 2022
-jul. 10, 2022 2:03:46 PM com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForWorkspaceUpdates
+jul. 10, 2022 9:07:36 PM com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
+INFORMAÇÕES: Package starting up at Sun Jul 10 21:07:36 BRT 2022
+jul. 10, 2022 9:07:41 PM com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForWorkspaceUpdates
 INFORMAÇÕES: Latest version of package has already been enabled in the workspace; check finished in 5ms
-jul. 10, 2022 2:14:56 PM org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor run
-GRAVE: java.io.IOException: Pipe broken
-org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: Pipe broken
-	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:122)
-	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-Caused by: java.io.IOException: Pipe broken
-	at java.base/java.io.PipedInputStream.read(PipedInputStream.java:321)
-	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
-	... 6 more
-
-jul. 10, 2022 2:25:14 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
-ADVERTÊNCIA: Unsupported notification method: threadStarted

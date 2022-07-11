@@ -5,3 +5,6 @@ ng generate class AppConstants ?skipTests=true
 ng generate class AppConstants --skipTests=true
 ls
 ng generate service LoginService --skipTests=true
+ng generate component Home -skipTestes-true
+ng generate component Home -skipTests=true
+ng generate component Login

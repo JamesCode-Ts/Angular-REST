@@ -1,0 +1,4 @@
+jul. 10, 2022 8:22:11 PM com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
+INFORMAÇÕES: Package starting up at Sun Jul 10 20:22:11 BRT 2022
+jul. 10, 2022 8:22:16 PM com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForWorkspaceUpdates
+INFORMAÇÕES: Latest version of package has already been enabled in the workspace; check finished in 8ms
