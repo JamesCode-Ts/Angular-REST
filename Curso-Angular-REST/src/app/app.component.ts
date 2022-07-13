@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { LoginServiceService } from './login-service.service';
+import { LoginServiceService } from './service/login-service.service';
 
 @Component({
   selector: 'app-root',
@@ -24,7 +24,7 @@ export class AppComponent implements OnInit {
 	}
 	
 	public sair(){
-    localStorage.clear(); /* Limpa o token */
+    localStorage.clear(); /* Limpa o token do navegador */
     this.router.navigate(['login']);
   }
 	

@@ -1,0 +1,44 @@
+import { HttpHandler, HttpEvent, HttpInterceptor, HttpRequest, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { Injectable, NgModule } from '@angular/core';
+import { Observable } from 'rxjs';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class HeaderInterceptorService implements HttpInterceptor{
+
+  
+    intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+        throw new Error('Method not implemented.');
+    
+    if (localStorage.getItem('token') !== null) {   /*Verifica se existe um token no localStore e se ele for diferente de nulo, ou seja, se ele existir.  */
+      const token = 'Bearer ' + localStorage.getItem('token');   /* pega o token e passa para a costante, respeitando  o prefixo bearer e o tokem propriamente dito. */
+
+      const tokenRequest = req.clone({
+        headers: req.headers.set('Authorization', token)
+      });
+
+      return next.handle(tokenRequest);
+    } else {
+      return next.handle(req);
+    }
+
+  }
+    constructor() { }
+}
+
+
+@NgModule({
+  providers: [{
+    provide: HTTP_INTERCEPTORS,
+    useClass: HeaderInterceptorService,
+    multi: true,
+  },
+  ],
+})
+
+export class HttpInterceptorModule {
+
+}
+
+

@@ -1,6 +1,4 @@
 npm install bootstrap@4.1.3 jquery@3.3.1 popper.js@1.14.3 --save
-cd src
-cd app
 ng generate class AppConstants ?skipTests=true
 ng generate class AppConstants --skipTests=true
 ls
@@ -8,3 +6,8 @@ ng generate service LoginService --skipTests=true
 ng generate component Home -skipTestes-true
 ng generate component Home -skipTests=true
 ng generate component Login
+cd src
+cd app
+cd service
+ng generate service HeaderInterceptor --skipTests=tue
+ng generate service HeaderInterceptor 

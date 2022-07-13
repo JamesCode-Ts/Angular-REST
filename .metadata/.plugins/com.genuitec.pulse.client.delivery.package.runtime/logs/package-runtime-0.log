@@ -1,68 +1,52 @@
-jul. 10, 2022 9:38:39 PM com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
-INFORMAÇÕES: Package starting up at Sun Jul 10 21:38:39 BRT 2022
-jul. 10, 2022 9:38:43 PM com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForWorkspaceUpdates
-INFORMAÇÕES: Latest version of package has already been enabled in the workspace; check finished in 8ms
-jul. 10, 2022 9:42:01 PM org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor run
-GRAVE: java.io.IOException: Pipe broken
-org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: Pipe broken
-	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:122)
-	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-Caused by: java.io.IOException: Pipe broken
-	at java.base/java.io.PipedInputStream.read(PipedInputStream.java:321)
-	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
-	... 6 more
+jul. 12, 2022 4:36:43 PM com.genuitec.pulse.client.deliverypackage.runtime.internal.Activator initializeLoggers
+INFORMAÇÕES: Package starting up at Tue Jul 12 16:36:43 BRT 2022
+jul. 12, 2022 4:36:49 PM com.genuitec.pulse.client.deliverypackage.runtime.UpdatesService checkForWorkspaceUpdates
+INFORMAÇÕES: Latest version of package has already been enabled in the workspace; check finished in 5ms
+jul. 12, 2022 4:41:50 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint notify
+ADVERTÊNCIA: Failed to send notification message.
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: O pipe está sendo fechado
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$4(LanguageServerWrapper.java:275)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.notify(RemoteEndpoint.java:126)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:88)
+	at jdk.proxy14/jdk.proxy14.$Proxy50.exit(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$14(LanguageServerWrapper.java:482)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1800)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1792)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: java.io.IOException: O pipe está sendo fechado
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:347)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
 
-jul. 10, 2022 9:51:39 PM org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor run
-GRAVE: java.io.IOException: Pipe broken
-org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: Pipe broken
-	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:122)
-	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-Caused by: java.io.IOException: Pipe broken
-	at java.base/java.io.PipedInputStream.read(PipedInputStream.java:321)
-	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
-	... 6 more
-
-jul. 11, 2022 3:48:52 PM org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor run
-GRAVE: java.io.IOException: Pipe broken
-org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: Pipe broken
-	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:122)
-	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-Caused by: java.io.IOException: Pipe broken
-	at java.base/java.io.PipedInputStream.read(PipedInputStream.java:321)
-	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
-	... 6 more
-
-jul. 11, 2022 4:11:21 PM org.eclipse.tm4e.core.model.TMModel$TokenizerThread updateTokensInRange
-GRAVE: null
-jul. 11, 2022 4:11:21 PM org.eclipse.tm4e.core.model.TMModel$TokenizerThread run
-GRAVE: Cannot invoke "String.length()" because "text" is null
-jul. 11, 2022 4:23:38 PM org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor run
-GRAVE: java.io.IOException: Pipe broken
-org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: Pipe broken
-	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:122)
-	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-	at java.base/java.lang.Thread.run(Thread.java:831)
-Caused by: java.io.IOException: Pipe broken
-	at java.base/java.io.PipedInputStream.read(PipedInputStream.java:321)
-	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:79)
-	... 6 more
+jul. 12, 2022 11:49:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint notify
+ADVERTÊNCIA: Failed to send notification message.
+org.eclipse.lsp4j.jsonrpc.JsonRpcException: java.io.IOException: O pipe está sendo fechado
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:72)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$4(LanguageServerWrapper.java:275)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.notify(RemoteEndpoint.java:126)
+	at org.eclipse.lsp4j.jsonrpc.services.EndpointProxy.invoke(EndpointProxy.java:88)
+	at jdk.proxy14/jdk.proxy14.$Proxy50.exit(Unknown Source)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$14(LanguageServerWrapper.java:482)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1800)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1792)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:295)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1016)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1665)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1598)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:183)
+Caused by: java.io.IOException: O pipe está sendo fechado
+	at java.base/java.io.FileOutputStream.writeBytes(Native Method)
+	at java.base/java.io.FileOutputStream.write(FileOutputStream.java:347)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageConsumer.consume(StreamMessageConsumer.java:69)
+	... 12 more
 
