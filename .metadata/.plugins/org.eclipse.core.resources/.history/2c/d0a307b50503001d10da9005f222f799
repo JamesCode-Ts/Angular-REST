@@ -1,0 +1,17 @@
+
+
+<table>
+<thead>
+
+<th></th>
+<th></th>
+<th></th>
+</thead>
+
+<tbody>
+
+<tr *ngFor="Let student of students">
+
+</tr>
+</tbody>
+</table>

@@ -12,7 +12,10 @@ ng generate service HeaderInterceptor --skipTests=tue
 ng generate service HeaderInterceptor 
 ng generate service Usuario --skipTest=true
 ng generate service Usuario --skipTests=true
-cd ..
 ls
 cd model
 ng generate class User --skipTests=true
+cd ..
+cd componente
+cd usuario
+ng generate component Usuario --skipTests=true

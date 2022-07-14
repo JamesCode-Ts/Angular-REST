@@ -1,0 +1,19 @@
+
+
+<table>
+<thead>
+
+<th>ID</th>
+<th>NOME</th>
+<th>CPF</th>
+</thead>
+
+<tbody>
+
+<tr *ngFor="Let student of students">
+	<td>{{student.id}}</td>
+	<td>{{student.nome}}</td>
+	<td>{{student.cpf}}</td>
+</tr>
+</tbody>
+</table>

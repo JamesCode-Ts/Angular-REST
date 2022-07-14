@@ -15,8 +15,7 @@ export const appRouters: Routes = [  /* Um array com dois vetores */
   
   {path : 'home', component : HomeComponent},
   {path : 'login', component : LoginComponent},
-  {path : '', component : LoginComponent},
-  {path: 'usuarioList', component: UsuarioComponent}
+  {path : '', component : LoginComponent}
   
 ];
 
